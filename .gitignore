@@ -1,0 +1,6 @@
+pyvenv.cfg
+/DATA
+/.env
+kagglehub
+.vscode
+labels.conll
