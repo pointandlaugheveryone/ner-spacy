@@ -1,6 +1,7 @@
-pyvenv.cfg
-/DATA
-/.env
-kagglehub
+.venv
 .vscode
+/data_azure
 labels.conll
+med-ins.json
+azurelabels.conll
+azurelabels.json
