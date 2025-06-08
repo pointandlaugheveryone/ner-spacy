@@ -1,16 +1,16 @@
 import json
 
 
-with open('azurelabels.json', 'r') as file:
+with open('/home/ronji/repos/CVdata/data_azure/azurelabels.json', 'r') as file:
     text = json.loads(file.read())
     # print(text)
     documents = text['documents']
 
+    i = 1
     for doc in documents:
-        i = 1
-        path = f'/home/ronji/repos/CVdata/DATA/{doc['contents']}' # renamed 'location' to contents previously
+        path = f'/home/ronji/repos/CVdata/data_azure/{doc['contents']}' # renamed 'location' to contents previously
         with open(path, 'r') as f:
-            contents = f.read()
+            contents = f.read().replace('\n',' ')
             doc['contents'] = contents
             doc['ID'] = i
         i += 1

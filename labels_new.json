@@ -9,53 +9,11 @@
                 "value": "ACCOUNTANT"
             },
             {
-                "end": 31,
-                "id": 2,
-                "start": 13,
-                "tag_name": "jobSkill",
-                "value": "   Summary  To obt"
-            },
-            {
-                "end": 501,
-                "id": 3,
-                "start": 494,
-                "tag_name": "jobSkill",
-                "value": "ding to"
-            },
-            {
-                "end": 1023,
-                "id": 4,
-                "start": 1014,
-                "tag_name": "jobSkill",
-                "value": "g use tax"
-            },
-            {
-                "end": 1110,
-                "id": 5,
-                "start": 1084,
-                "tag_name": "jobSkill",
-                "value": "ous Duties Entered monthly"
-            },
-            {
-                "end": 1136,
-                "id": 6,
-                "start": 1131,
-                "tag_name": "jobSkill",
-                "value": "accru"
-            },
-            {
                 "end": 1334,
                 "id": 7,
                 "start": 1317,
                 "tag_name": "jobTitle",
                 "value": "Campus Accountant"
-            },
-            {
-                "end": 1542,
-                "id": 8,
-                "start": 1530,
-                "tag_name": "softSkill",
-                "value": "rial balance"
             },
             {
                 "end": 3350,
@@ -77,13 +35,6 @@
                 "start": 5528,
                 "tag_name": "jobSkill",
                 "value": "accruals"
-            },
-            {
-                "end": 5540,
-                "id": 12,
-                "start": 5538,
-                "tag_name": "jobSkill",
-                "value": "AP"
             },
             {
                 "end": 5547,
