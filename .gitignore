@@ -1,7 +1,5 @@
 .venv
 .vscode
 /data_azure
-labels.conll
 labels.json
-med-ins.json
-azurelabels.conll
+/__pycache__

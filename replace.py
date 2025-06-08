@@ -10,9 +10,12 @@ with open('/home/ronji/repos/CVdata/data_azure/azurelabels.json', 'r') as file:
     for doc in documents:
         path = f'/home/ronji/repos/CVdata/data_azure/{doc['contents']}' # renamed 'location' to contents previously
         with open(path, 'r') as f:
-            contents = f.read().replace('\n',' ')
-            doc['contents'] = contents
-            doc['ID'] = i
+            contents = f.read().replace("\n", " ").replace("\t", " ").replace("\r", " ")
+            if len(contents) < 50:
+                continue
+            else:
+                doc['contents'] = contents
+                doc['ID'] = i
         i += 1
 
 with open('labels.json', 'w') as labels:
