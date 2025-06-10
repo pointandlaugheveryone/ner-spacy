@@ -5,21 +5,21 @@ class Annotation:
     id: int
     start: int
     end: int
-    tag_name: str
+    label: str
     value: str
 
-    def __init__(self, start: int, end: int, tag_name: str, value: str) -> None:
+    def __init__(self,id:int, start: int, end: int, label: str) -> None:
         self.start = start
+        self.id = id
         self.end = end
-        self.tag_name = tag_name
-        self.value = value
+        self.label = label
 
     def to_dict(self) -> dict:
         return {
+            "id": self.id,
             "start": self.start,
             "end": self.end,
-            "tag_name": self.tag_name,
-            "value": self.value,
+            "label": self.label
         }
 
 
@@ -29,14 +29,16 @@ class Document:
     content: str
     annotations: List[Annotation]
 
-    def __init__(self, content: str, annotations: List[Annotation]) -> None:
+    def __init__(self,id:int, content: str, annotations: List[Annotation]) -> None:
+        self.id= id
         self.content = content
         self.annotations = annotations
 
-    def to_dict(self) -> dict:
+    def to_dict(self, annotations:list) -> dict:
         return {
+            "id":self.id,
             "content": self.content,
-            "annotations": [annotation.to_dict() for annotation in self.annotations],
+            "annotations": annotations,
         }
 
 
