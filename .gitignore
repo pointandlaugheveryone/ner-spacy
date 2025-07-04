@@ -1,12 +1,9 @@
 .venv
 .vscode
-/data_azure
-labels.json
 /__pycache__
 config.cfg
-labels_archive.json
 train.spacy
-/resumeNER_kaggle
-/model_best
-/model_last
-data_azure2
+/data_src
+test.txt
+/model-best
+/model-last
