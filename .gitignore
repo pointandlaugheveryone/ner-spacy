@@ -5,5 +5,5 @@ config.cfg
 train.spacy
 /data_src
 test.txt
-/model-best
-/model-last
+model-best/
+model-last/
